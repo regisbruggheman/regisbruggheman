@@ -1,12 +1,12 @@
 backend:
   name: github
-  repo: repo
+  repo: regisbruggheman/regisbruggheman
   branch: master
-  
+
 media_folder: "static/uploads"
 public_folder: "/uploads"
 collections:
-  
+
   - name: "page"
     label: "Page"
     folder: "content"

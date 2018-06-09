@@ -1,1 +1,31 @@
-// ...
+// Colors
+
+$bg-color: #efefef;
+$text-color: #272727;
+$primary-color: #fd7e14; //orange
+
+// Style anchor elements.
+
+$link-color: $text-color;
+$link-decoration: none;
+$link-hover-color: $link-color;
+$link-hover-decoration: none;
+
+// Fonts
+
+$headings-font-family: 'Playfair Display', serif;
+
+@import "bootstrap/bootstrap";
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.site-main {
+  display: flex;
+  flex: 1;
+}
+.site-footer {
+  padding: 0.5rem 1rem;
+}
