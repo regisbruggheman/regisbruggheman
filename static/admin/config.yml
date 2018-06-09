@@ -2,6 +2,7 @@ backend:
   name: github
   repo: regisbruggheman/regisbruggheman
   branch: master
+  base_url: regisbruggheman.netlify.com
 
 media_folder: "static/uploads"
 public_folder: "/uploads"

@@ -30,3 +30,18 @@ mediatype = "text/netlify"
 baseName = "_headers"
 isPlainText = true
 notAlternative = true
+
+[[menu.main]]
+  name = "Home"
+  url  = "/"
+  weight = 0
+
+ [[menu.main]]
+  name = "About"
+  url  = "about"
+  weight = 5
+
+ [[menu.main]]
+  name = "Blog"
+  url  = "post/"
+  weight = 10
