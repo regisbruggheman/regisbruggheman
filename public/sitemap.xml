@@ -3,7 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
+    <loc>/about/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/bootstrap/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/brand/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/capitalents-rh/</loc>
   </url>
   
   <url>
@@ -12,7 +26,61 @@
   </url>
   
   <url>
+    <loc>/post/cttsb/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/elisa-bally/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/exquise-esquisse/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/hugo/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/letoiny/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/malin-kirsher/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/pecard/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/print/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/responsive-design/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/web/</loc>
     <priority>0</priority>
   </url>
   

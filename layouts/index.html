@@ -1,20 +1,48 @@
 {{ define "main" }}
-    <main aria-role="main">
-      <header class="homepage-header">
-        <h1>{{.Title}}</h1>
-        {{ with .Params.subtitle }}
-        <span class="subtitle">{{.}}</span>
+<div class="col hero">
+  <h1>
+    brand & print & web
+  </h1>
+  <h6>
+    depuis 1996
+  </h6>
+</div>
+{{ range where .Data.Pages "Section" "post" }}
+<article class="col col-12 project-item">
+  <a href='{{ .Permalink }}' class="project-item-overlay">
+    <!-- Image path on file system -->
+    {{ $img_src := .Resources.GetMatch "images/*hero*" }}
+    <!-- Check whether the path exists -->
+    {{ with $img_src }}
+    <img src="{{ .RelPermalink }}" class="img-fluid project-item-figure" itemprop="image">
+    {{ else }}
+    <!-- Trigger an error message with that the file or path couldn't be found -->
+    <img src="http://via.placeholder.com/1200x800?text=not+found" class="img-fluid project-item-figure">
+    <!-- {{ errorf "Specified file at not found." }} -->
+    {{ end }}
+    <header class="project-item-header">
+      <h2 class="project-item-title">{{ .Title }}</h2>
+      {{ if .Params.Domain }}
+        <p class="project-item-meta">
+          {{ .Params.Domain | markdownify }}
+        </p>
+      {{ end }}
+      {{ if .Params.tags }}
+        <p class="project-item-meta">
+          {{ range .Params.tags }}
+          <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">
+            {{ . }}</a> &
+          {{ end }}
+        </p>
         {{ end }}
-      </header>
-      <div class="homepage-content">
-        <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
-        {{.Content}}
-      </div>
-      <div>
-        <!-- Note that .Data.Pages is the equivalent of .Site.Pages on the homepage template. -->
-        {{ range first 10 .Data.Pages }}
-            {{ .Render "summary"}}
+
+        {{ if .Params.Website }}
+          <a href="{{ .Params.Website }}" target="_blank" class="project-item-meta">
+            Visiter le site
+          </a>
         {{ end }}
-      </div>
-    </main>
+    </header>
+  </a>
+</article> <!-- /.project-item-item -->
+{{ end }}
 {{ end }}

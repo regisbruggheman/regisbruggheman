@@ -1,8 +1,13 @@
 {{ define "main" }}
 
-    <article>
+    <article class="col col-12">
         <h1>{{ .Title }}</h1>
         {{ .Content }}
+        {{ range .Resources.Match "**.jpg" }}
+          <figure class="Figure">
+            <img src="{{ .Permalink }}" alt="{{ .Title }}" class="img-fluid">
+          </figure>
+        {{ end }}
     </article>
 
 {{ end }}

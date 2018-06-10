@@ -1,9 +1,11 @@
 baseURL = "/"
 languageCode = "fr-FR"
-title = "Hello"
+title = "Regis Bruggheman [ Design ]"
 
 enableRobotsTXT = true
 disableAliases = true
+
+defaultContentLanguage = "fr"
 
 [params]
 disallow_search_engines = false # set robots.txt to disallow everything
@@ -31,17 +33,13 @@ baseName = "_headers"
 isPlainText = true
 notAlternative = true
 
-[[menu.main]]
-  name = "Home"
-  url  = "/"
-  weight = 0
+[menu]
+  [[menu.main]]
+    name = "Portfolio"
+    url  = "/"
+    weight = 1
 
- [[menu.main]]
-  name = "About"
-  url  = "about"
-  weight = 5
-
- [[menu.main]]
-  name = "Blog"
-  url  = "post/"
-  weight = 10
+  [[menu.main]]
+    name = "About"
+    url  = "about"
+    weight = 5
