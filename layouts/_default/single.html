@@ -11,15 +11,15 @@
         {{ end }}
         <footer class="row">
           <div class="col-md-3">
-            <strong>Partager ce projet:</strong>
+            <strong>Partager ce projet :</strong>
             {{ partial "sharing-icons.html" . }}
           </div>
           <div class="col-md-5">
-            <strong>Champs d'intervention:</strong>
+            <strong>Champs d'intervention :</strong>
             {{ partial "post-tags.html" . }}
           </div>
           <div class="col-md-4">
-            <strong>Secteur d'activité:</strong>
+            <strong>Secteur d'activité :</strong>
             {{ if .Params.Domain }}
               <p>{{ .Params.Domain | markdownify }}</p>
             {{ end }}
