@@ -4,7 +4,6 @@ title = "Regis Bruggheman [ Design ]"
 
 enableRobotsTXT = true
 disableAliases = true
-
 defaultContentLanguage = "fr"
 
 [taxonomies]
@@ -55,9 +54,6 @@ notAlternative = true
 
   # Date format (default: Jan 2, 2006)
   # date_format = "Jan 2, 2006"
-
-  # Display post summaries instead of content in list templates (default: true)
-  truncate = true
 
   # set robots.txt to disallow everything
   disallow_search_engines = false
