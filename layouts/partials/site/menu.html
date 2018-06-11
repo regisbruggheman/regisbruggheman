@@ -1,0 +1,6 @@
+{{ $url := .URL | relLangURL }}
+{{ range .Site.Menus.main }}
+<li class="nav-item {{ if eq $url (.URL | relLangURL) }}active{{end}}">
+  <a class="nav-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+</li>
+{{ end }}

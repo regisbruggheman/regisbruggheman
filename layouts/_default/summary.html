@@ -1,13 +1,22 @@
-<article class="blog-post">
-    <header>
-        <h2 class="blog-post-title">
-            <a class="text-dark" href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
-        </h2>
-        {{ partial "post-date" . }}
-        {{ partial "post-tags" . }}
-        {{ partial "post-categories" . }}
+<article class="col col-12 project-item">
+  <a href='{{ .Permalink }}' class="project-item-overlay">
+    <!-- Image path on file system -->
+    {{ $img_src := .Resources.GetMatch "images/*hero*" }}
+    <!-- Check whether the path exists -->
+    {{ with $img_src }}
+    <img src="{{ .RelPermalink }}" class="img-fluid project-item-figure" itemprop="image">
+    {{ else }}
+    <!-- Trigger an error message with that the file or path couldn't be found -->
+    <img src="http://via.placeholder.com/1200x800?text=not+found" class="img-fluid project-item-figure">
+    <!-- {{ errorf "Specified file at not found." }} -->
+    {{ end }}
+    <header class="project-item-header">
+      <h2 class="project-item-title">{{ .Title }}</h2>
+      {{ if .Params.Domain }}
+        <p class="project-item-meta">
+          {{ .Params.Domain | markdownify }}
+        </p>
+      {{ end }}
     </header>
-    {{ .Summary }}
-    <p></p>
-    <a href="{{ .RelPermalink }}">{{ i18n "readMore" }}</a>
-</article>
+  </a>
+</article> <!-- /.project-item -->

@@ -1,0 +1,10 @@
+{{ $folder_name := index (split .Name "/") 0 }}
+{{ $image_name := index (split .Name "/") 1 }}
+{{ $orientation := cond (ge .Width .Height) "landscape" "portrait" }}
+<picture>
+  <source srcset="{{ $folder_name }}/xl/{{ $image_name }}" media="(min-width: 1200px)" />
+  <source srcset="{{ $folder_name }}/lg/{{ $image_name }}" media="(min-width: 992px)" />
+  <source srcset="{{ $folder_name }}/md/{{ $image_name }}" media="(min-width: 768px)" />
+  <source srcset="{{ $folder_name }}/sm/{{ $image_name }}" media="(min-width: 576px)" />
+  <img src="{{ .RelPermalink }}" class="img-fluid" />
+</picture>

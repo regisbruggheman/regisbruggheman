@@ -6,23 +6,24 @@
     <description>Recent content on Regis Bruggheman [ Design ]</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
+    <lastBuildDate>Sun, 01 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>A propos</title>
-      <link>/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Exquise Esquisse</title>
+      <link>/post/exquise-esquisse/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
-      <description>Put your about content here</description>
+      <guid>/post/exquise-esquisse/</guid>
+      <description>Put your content here</description>
     </item>
     
     <item>
       <title>Capitalents RH</title>
       <link>/post/capitalents-rh/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/capitalents-rh/</guid>
       <description>Put your content here</description>
@@ -31,55 +32,46 @@
     <item>
       <title>Comité du tourisme de St-Barth</title>
       <link>/post/cttsb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
       
       <guid>/post/cttsb/</guid>
       <description>Put your content here</description>
     </item>
     
     <item>
-      <title>Elisa Bally</title>
-      <link>/post/elisa-bally/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/elisa-bally/</guid>
-      <description>Put your content here</description>
-    </item>
-    
-    <item>
-      <title>Exquise Esquisse</title>
-      <link>/post/exquise-esquisse/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/exquise-esquisse/</guid>
-      <description>Put your content here</description>
-    </item>
-    
-    <item>
-      <title>Hôtel Le toiny</title>
-      <link>/post/letoiny/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/letoiny/</guid>
-      <description>Put your content here</description>
-    </item>
-    
-    <item>
       <title>Malin Kirsher</title>
       <link>/post/malin-kirsher/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
       
       <guid>/post/malin-kirsher/</guid>
       <description>Put your content here</description>
     </item>
     
     <item>
+      <title>Elisa Bally</title>
+      <link>/post/elisa-bally/</link>
+      <pubDate>Fri, 01 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/post/elisa-bally/</guid>
+      <description>Put your content here</description>
+    </item>
+    
+    <item>
       <title>Pecard Architecte</title>
       <link>/post/pecard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Feb 2013 00:00:00 +0000</pubDate>
       
       <guid>/post/pecard/</guid>
       <description>Put your content here</description>
+    </item>
+    
+    <item>
+      <title>A propos</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Put your about content here</description>
     </item>
     
   </channel>

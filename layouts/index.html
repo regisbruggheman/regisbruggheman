@@ -3,46 +3,8 @@
   <h1>
     brand & print & web
   </h1>
-  <h6>
-    depuis 1996
-  </h6>
 </div>
 {{ range where .Data.Pages "Section" "post" }}
-<article class="col col-12 project-item">
-  <a href='{{ .Permalink }}' class="project-item-overlay">
-    <!-- Image path on file system -->
-    {{ $img_src := .Resources.GetMatch "images/*hero*" }}
-    <!-- Check whether the path exists -->
-    {{ with $img_src }}
-    <img src="{{ .RelPermalink }}" class="img-fluid project-item-figure" itemprop="image">
-    {{ else }}
-    <!-- Trigger an error message with that the file or path couldn't be found -->
-    <img src="http://via.placeholder.com/1200x800?text=not+found" class="img-fluid project-item-figure">
-    <!-- {{ errorf "Specified file at not found." }} -->
-    {{ end }}
-    <header class="project-item-header">
-      <h2 class="project-item-title">{{ .Title }}</h2>
-      {{ if .Params.Domain }}
-        <p class="project-item-meta">
-          {{ .Params.Domain | markdownify }}
-        </p>
-      {{ end }}
-      {{ if .Params.tags }}
-        <p class="project-item-meta">
-          {{ range .Params.tags }}
-          <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">
-            {{ . }}</a> &
-          {{ end }}
-        </p>
-        {{ end }}
-
-        {{ if .Params.Website }}
-          <a href="{{ .Params.Website }}" target="_blank" class="project-item-meta">
-            Visiter le site
-          </a>
-        {{ end }}
-    </header>
-  </a>
-</article> <!-- /.project-item-item -->
+  {{ partial "summary.html" . }}
 {{ end }}
 {{ end }}

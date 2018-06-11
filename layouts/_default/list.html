@@ -1,25 +1,7 @@
 {{ define "main" }}
 
     {{ range .Paginator.Pages }}
-    <article class="col col-12 project-item">
-      <a href='{{ .Permalink }}' class="project-item-overlay">
-      <!-- Image path on file system -->
-      {{ $img_src := (printf "/%s" .Params.hero) }}
-      <!-- Check whether the path exists -->
-
-      {{ with .Resources.ByType "**.svg" }}
-          <div class="Image">
-          {{ range . }}
-              <img src="{{ .RelPermalink }}">
-          {{ end }}
-          </div>
-      {{ end }}
-
-      <header class="d-flex flex-column justify-content-between project-item-header">
-        <h2 class="project-item-title">{{ .Title }}</h2>
-      </header>
-     </a>
-    </article> <!-- /.project-item-item -->
+      {{ partial "summary.html" . }}
     {{ end }}
 
 {{ end }}

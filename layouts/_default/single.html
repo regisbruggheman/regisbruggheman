@@ -1,13 +1,29 @@
 {{ define "main" }}
 
-    <article class="col col-12">
-        <h1>{{ .Title }}</h1>
-        {{ .Content }}
+    <article class="col col-12 article-single">
+        <header>
+          <h1 class="article-single-title">{{ .Title }}</h1>
+        </header>
         {{ range .Resources.Match "**.jpg" }}
           <figure class="Figure">
             <img src="{{ .Permalink }}" alt="{{ .Title }}" class="img-fluid">
           </figure>
         {{ end }}
+        <footer class="row">
+          <div class="col-md-3">
+            <strong>Partager ce projet:</strong>
+            {{ partial "sharing-icons.html" . }}
+          </div>
+          <div class="col-md-5">
+            <strong>Champs d'intervention:</strong>
+            {{ partial "post-tags.html" . }}
+          </div>
+          <div class="col-md-4">
+            <strong>Secteur d'activité:</strong>
+            {{ if .Params.Domain }}
+              <p>{{ .Params.Domain | markdownify }}</p>
+            {{ end }}
+          </div>
+        </footer>
     </article>
-
 {{ end }}

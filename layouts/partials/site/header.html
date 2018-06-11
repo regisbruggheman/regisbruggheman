@@ -1,4 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+  <div class="container">
   <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
     Régis Bruggheman
   </a>
@@ -8,12 +9,17 @@
 
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
-      {{ $url := .URL | relLangURL }}
-      {{ range .Site.Menus.main }}
-      <li class="nav-item {{ if eq $url (.URL | relLangURL) }}active{{end}}">
-        <a class="nav-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+      <li class="nav-item">
+        <a class="nav-link" href="mailto:regis.bruggheman@gmail.com">
+          email
+        </a>
       </li>
-      {{ end }}
+      <li class="nav-item">
+        <a class="nav-link" href="tel:+33-6-73-74-35-38">
+          06-73-74-35-38
+        </a>
+      </li>
     </ul>
+  </div>
   </div>
 </nav>

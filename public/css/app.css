@@ -145,7 +145,7 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
-    color: #272727;
+    color: rgba(39, 39, 39, 0.7);
     text-decoration: none; }
 
 a:not([href]):not([tabindex]) {
@@ -2423,7 +2423,7 @@ fieldset:disabled a.btn {
   color: #272727;
   background-color: transparent; }
   .btn-link:hover {
-    color: #272727;
+    color: rgba(39, 39, 39, 0.7);
     text-decoration: none;
     background-color: transparent;
     border-color: transparent; }
@@ -3265,10 +3265,10 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   margin-right: 1rem;
-  font-size: 1.4rem;
+  font-size: 1rem;
   line-height: inherit;
   white-space: nowrap; }
   .navbar-brand:hover, .navbar-brand:focus {
@@ -3847,7 +3847,7 @@ input[type="button"].btn-block {
   border: 1px solid #dee2e6; }
   .page-link:hover {
     z-index: 2;
-    color: #272727;
+    color: rgba(39, 39, 39, 0.7);
     text-decoration: none;
     background-color: #e9ecef;
     border-color: #dee2e6; }
@@ -7261,6 +7261,10 @@ a.text-dark:hover, a.text-dark:focus {
   background: #fd7e14;
   text-shadow: none; }
 
+a[href^="tel:"] {
+  color: #272727;
+  text-decoration: none; }
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7282,9 +7286,17 @@ body {
 .site-footer {
   padding: 0.5rem 1rem; }
 
+.navbar {
+  border-bottom: 1px solid #fff; }
+
 .navbar-nav .nav-link {
   text-transform: uppercase;
   font-size: .8rem; }
+
+.navbar-brand {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
 
 .hero {
   padding: 6rem 0;
@@ -7305,35 +7317,13 @@ body {
   padding: 1.25rem;
   margin: 0;
   border: none;
-  overflow: hidden; }
-
-@media (min-width: 576px) {
-  .project-item-figure {
-    max-width: 75% !important; }
-  .project-item-header {
-    position: absolute;
-    z-index: 1;
-    width: 30%;
-    min-width: 220px;
-    max-width: 320px;
-    height: 74%;
-    top: 13%; }
-  .project-item:nth-child(odd) .project-item-header {
-    right: 0;
-    left: auto; }
-  .project-item:nth-child(odd) .project-item-figure {
-    margin-right: 25%; }
-  .project-item:nth-child(even) .project-item-header {
-    left: 0;
-    right: auto; }
-  .project-item:nth-child(even) .project-item-figure {
-    margin-left: 25%; } }
+  overflow: hidden;
+  border-left: 6px solid #272727; }
 
 .project-item-title {
   margin-bottom: 0;
   font-size: 1.5rem;
-  font-weight: normal;
-  margin-right: 2rem; }
+  font-weight: normal; }
 
 .project-item-meta {
   margin-bottom: 0;
@@ -7341,9 +7331,48 @@ body {
   line-height: 1.3;
   font-size: .9rem; }
 
+@media (min-width: 768px) {
+  .project-item-overlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+  .project-item-figure {
+    max-width: 70% !important; }
+  .project-item:nth-child(odd) .project-item-header {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    border-right: 6px solid #272727;
+    border-left: 0;
+    text-align: right;
+    margin-right: 1rem; }
+  .project-item:nth-child(even) .project-item-header {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    border-left: 6px solid #272727;
+    margin-left: 1rem; } }
+
 /* Zoom In #1 */
-.project-item-overlay {
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out; }
-  .project-item-overlay:hover {
-    background-color: #272727; }
+/*----- PROJECT -----*/
+.article-single header {
+  margin-bottom: 3rem;
+  margin-top: 3rem; }
+
+.article-single footer {
+  margin-bottom: 3rem;
+  margin-top: 3rem; }
+  .article-single footer > div {
+    margin-top: 1rem; }
+
+.article-single-title {
+  border-left: 6px solid #272727;
+  font-size: 1.4rem;
+  padding-left: .7rem; }
+
+.nav-sharing-icons .nav-link {
+  padding: 0 1rem 0 0;
+  font-size: 1.3rem; }
