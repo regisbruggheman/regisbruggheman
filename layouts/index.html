@@ -5,6 +5,6 @@
   </h1>
 </div>
 {{ range where .Data.Pages "Section" "post" }}
-  {{ partial "summary.html" . }}
+  {{ .Render "summary" }}
 {{ end }}
 {{ end }}

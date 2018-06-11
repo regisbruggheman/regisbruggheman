@@ -7,8 +7,9 @@ disableAliases = true
 
 defaultContentLanguage = "fr"
 
-[params]
-disallow_search_engines = false # set robots.txt to disallow everything
+[taxonomies]
+  tag = "étiquettes"
+  category = "catégories"
 
 # add redirects/headers
 [outputs]
@@ -43,3 +44,24 @@ notAlternative = true
     name = "About"
     url  = "about"
     weight = 5
+
+    # Links format
+
+[permalinks]
+  post = "/:title/"
+
+[params]
+  # Main sections (currently used for the recent posts in the sidebar)
+  mainSections = ["post"]
+
+  # Default author
+  author = "Régis Bruggheman"
+
+  # Date format (default: Jan 2, 2006)
+  # date_format = "Jan 2, 2006"
+
+  # Display post summaries instead of content in list templates (default: true)
+  truncate = true
+
+  # set robots.txt to disallow everything
+  disallow_search_engines = true

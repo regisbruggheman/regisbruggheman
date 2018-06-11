@@ -1,7 +1,7 @@
 {{ define "main" }}
 
     {{ range .Paginator.Pages }}
-      {{ partial "summary.html" . }}
+      {{ .Render "summary" }}
     {{ end }}
 
 {{ end }}
