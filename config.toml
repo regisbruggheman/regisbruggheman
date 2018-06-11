@@ -8,8 +8,7 @@ disableAliases = true
 defaultContentLanguage = "fr"
 
 [taxonomies]
-  tag = "étiquettes"
-  category = "catégories"
+  tag = "tags"
 
 # add redirects/headers
 [outputs]
@@ -47,12 +46,9 @@ notAlternative = true
 
     # Links format
 
-[permalinks]
-  post = "/:title/"
-
 [params]
   # Main sections (currently used for the recent posts in the sidebar)
-  mainSections = ["post"]
+  mainSections = ["project"]
 
   # Default author
   author = "Régis Bruggheman"
@@ -64,4 +60,4 @@ notAlternative = true
   truncate = true
 
   # set robots.txt to disallow everything
-  disallow_search_engines = true
+  disallow_search_engines = false

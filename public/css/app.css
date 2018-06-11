@@ -7265,6 +7265,10 @@ a[href^="tel:"] {
   color: #272727;
   text-decoration: none; }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1000px; } }
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;

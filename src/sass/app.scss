@@ -36,6 +36,13 @@ a[href^="tel:"] {
   text-decoration: none;
 }
 
+@include media-breakpoint-up(xl) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+
 body {
   display: flex;
   min-height: 100vh;

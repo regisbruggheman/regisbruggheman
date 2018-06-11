@@ -4,7 +4,7 @@
     brand & print & web
   </h1>
 </div>
-{{ range where .Data.Pages "Section" "post" }}
+{{ range where .Data.Pages "Section" "project" }}
   {{ .Render "summary" }}
 {{ end }}
 {{ end }}
