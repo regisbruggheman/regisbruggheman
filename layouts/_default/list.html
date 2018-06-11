@@ -1,7 +1,7 @@
 {{ define "main" }}
 
-    {{ range .Paginator.Pages }}
+    {{ range where .Data.Pages "Section" "project" }}
       {{ .Render "summary" }}
     {{ end }}
-    
+
 {{ end }}

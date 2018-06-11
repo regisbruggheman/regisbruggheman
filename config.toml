@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "fr-FR"
-title = "Regis Bruggheman [ Design ]"
+title = "Regis Bruggheman"
 
 enableRobotsTXT = true
 disableAliases = true
@@ -56,4 +56,4 @@ notAlternative = true
   # date_format = "Jan 2, 2006"
 
   # set robots.txt to disallow everything
-  disallow_search_engines = false
+  disallow_search_engines = true
