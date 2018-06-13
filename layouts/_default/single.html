@@ -9,6 +9,11 @@
             <img src="{{ .Permalink }}" alt="{{ .Title }}" class="img-fluid">
           </figure>
         {{ end }}
+        {{ if .Params.Website }}
+          <a href="{{ .Params.Website }}" target="_blank">
+            <i class="fas fa-arrow-right"></i> Visiter le site
+          </a>
+        {{ end }}
         <footer class="row">
           <div class="col-md-4">
             <strong>Partager ce projet :</strong>

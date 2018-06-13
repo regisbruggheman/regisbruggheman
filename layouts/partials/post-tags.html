@@ -1,7 +1,7 @@
 {{ if .Params.tags }}
   <div class="blog-post-tags">
     {{ range $index, $tag := .Params.tags }}
-      {{ if gt $index 0 }}, {{ end }}
+      {{ if gt $index 0 }}&mid;{{ end }}
       <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
     {{ end }}
   </div>

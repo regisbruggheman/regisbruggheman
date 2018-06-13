@@ -31,7 +31,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Heebo", sans-serif;
+  --font-family-sans-serif: "Gothic A1", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 *,
@@ -56,7 +56,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Heebo", sans-serif;
+  font-family: "Gothic A1", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -4482,7 +4482,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Heebo", sans-serif;
+  font-family: "Gothic A1", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -4567,7 +4567,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Heebo", sans-serif;
+  font-family: "Gothic A1", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7269,6 +7269,7 @@ a[href^="tel:"] {
   .container {
     max-width: 1000px; } }
 
+/*----- LAYOUT -----*/
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7290,6 +7291,7 @@ body {
 .site-footer {
   padding: 0.5rem 1rem; }
 
+/*----- NAVBAR -----*/
 .navbar {
   border-bottom: 1px solid #fff; }
 
@@ -7302,6 +7304,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
+/*----- HOME -----*/
 .hero {
   padding: 6rem 0;
   text-align: center; }

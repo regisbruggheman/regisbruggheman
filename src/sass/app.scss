@@ -1,3 +1,8 @@
+
+// Fonts
+
+$font-family-sans-serif: 'Gothic A1', sans-serif;
+
 // Colors
 
 $body-bg: #efefef;
@@ -11,6 +16,8 @@ $link-decoration: none;
 $link-hover-color: rgba($text-color, .7);
 $link-hover-decoration: none;
 
+// Navbar
+
 $navbar-light-color: rgba($text-color, .5);
 $navbar-light-hover-color: rgba($text-color, .7);
 $navbar-light-active-color: rgba($text-color, .9);
@@ -20,15 +27,11 @@ $navbar-padding-y: 3rem;
 
 $navbar-brand-font-size: 1rem;
 
-// Fonts
-
-$font-family-sans-serif: 'Heebo', sans-serif;
-
 @import "bootstrap/bootstrap";
 
 :selection {
- background: $primary-color;
- text-shadow: $link-decoration;
+  background: $primary-color;
+  text-shadow: $link-decoration;
 }
 
 a[href^="tel:"] {
@@ -42,6 +45,7 @@ a[href^="tel:"] {
   }
 }
 
+/*----- LAYOUT -----*/
 
 body {
   display: flex;
@@ -55,10 +59,12 @@ body {
 .site-footer {
   padding: 0.5rem 1rem;
 }
+
+/*----- NAVBAR -----*/
+
 .navbar {
   border-bottom: 1px solid #fff;
 }
-
 .navbar-nav {
   .nav-link {
     text-transform: uppercase;
@@ -70,6 +76,9 @@ body {
   text-transform:uppercase;
   letter-spacing: 1px;
 }
+
+/*----- HOME -----*/
+
 .hero {
   padding: 6rem 0;
   text-align: center;
@@ -77,7 +86,9 @@ body {
     font-size: 3rem;
   }
 }
+
 /*----- PROJECTS LIST -----*/
+
 .project-item {
   margin: 0 0 3rem 0;
 }
@@ -127,8 +138,6 @@ body {
   }
 }
 
-
-
 /* Zoom In #1 */
 // .project-item-overlay {
 //   -webkit-transition: .3s ease-in-out;
@@ -139,6 +148,7 @@ body {
 // }
 
 /*----- PROJECT -----*/
+
 .article-single {
   header {
     margin-bottom: 3rem;
