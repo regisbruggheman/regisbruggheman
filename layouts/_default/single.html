@@ -1,11 +1,12 @@
 {{ define "main" }}
-
+<div class="container">
+  <div class="row">
     <article class="col col-12 article-single">
         <header>
           <h1 class="article-single-title">{{ .Title }}</h1>
         </header>
-        {{ range .Resources.Match "**.jpg" }}
-          <figure class="Figure">
+        {{ range .Resources.ByType "image" }}
+          <figure class="figure">
             <img src="{{ .Permalink }}" alt="{{ .Title }}" class="img-fluid">
           </figure>
         {{ end }}
@@ -14,7 +15,7 @@
             <i class="fas fa-arrow-right"></i> Visiter le site
           </a>
         {{ end }}
-        <footer class="row">
+        <footer class="row article-single-footer">
           <div class="col-md-4">
             <strong>Partager ce projet :</strong>
             {{ partial "sharing-icons.html" . }}
@@ -31,4 +32,7 @@
           </div>
         </footer>
     </article>
+  </div>
+</div>
+    {{ partial "paginator.html" . }}
 {{ end }}

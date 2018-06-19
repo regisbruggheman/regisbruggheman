@@ -1,7 +1,14 @@
 {{ define "main" }}
-
+<div class="container">
+  <div class="row">
+    <div class="col col-12 hero">
+      <h1>
+        Nous concevons des marques qui font tourner les têtes. Et avec plus de 20 ans dans le jeu, nous avons appris qu'une bonne image de marque n'a pas besoin d'être compliquée ou chère. Nous ne jetterons pas votre jargon à votre guise ni ne recommanderons des choses dont vous n'avez pas besoin. Au lieu de cela, nous créons un design réfléchi, efficace dans le respect de votre budget.
+      </h1>
+    </div>
     {{ range where .Data.Pages "Section" "project" }}
       {{ .Render "summary" }}
     {{ end }}
-
+  </div>
+</div>
 {{ end }}

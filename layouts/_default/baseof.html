@@ -20,11 +20,7 @@
         {{ block "header" . }}{{ partial "site/header.html" . }}{{ end }}
 
         <main role="main" class="site-main ">
-          <div class="container">
-            <div class="row">
-                {{ block "main" . }}{{ end }}
-            </div>
-          </div>
+          {{ block "main" . }}{{ end }}
         </main>
 
         {{ block "footer" . }}{{ partial "site/footer.html" . }}{{ end }}

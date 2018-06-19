@@ -47,19 +47,14 @@ a[href^="tel:"] {
 
 /*----- LAYOUT -----*/
 
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-.site-main {
-  display: flex;
-  flex: 1;
-}
 .site-footer {
   padding: 0.5rem 1rem;
 }
-
+.site-section {
+  width: 100%;
+  background-color: $white;
+  padding: 6rem 0;
+}
 /*----- NAVBAR -----*/
 
 .navbar {
@@ -161,6 +156,9 @@ body {
       margin-top: 1rem;
     }
   }
+  figure {
+    background-color: $white;
+  }
 }
 
 .article-single-title {
@@ -173,4 +171,19 @@ body {
     padding: 0 1rem 0 0;
     font-size: 1.5rem;
   }
+}
+.article-single-footer {
+  border-top: 1px solid #fff;
+}
+
+/*----- SKILLS -----*/
+.progress-item {
+  margin-bottom: 2rem;
+}
+.progress {
+  height: 2px;
+  background-color: $gray-200;
+}
+.progress-bar {
+  background-color: $gray-400;
 }
