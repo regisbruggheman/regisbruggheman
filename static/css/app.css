@@ -7290,6 +7290,9 @@ a[href^="tel:"] {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px; }
+  .navbar-brand img {
+    max-width: 80px;
+    margin-right: 20px; }
 
 /*----- HOME -----*/
 .hero {
