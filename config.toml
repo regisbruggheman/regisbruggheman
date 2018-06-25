@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "fr-FR"
 title = "Régis Bruggheman | Graphiste 360°"
-
+author = "Régis Bruggheman"
 enableRobotsTXT = true
 disableAliases = true
 defaultContentLanguage = "fr"
@@ -57,3 +57,5 @@ notAlternative = true
 
   # set robots.txt to disallow everything
   disallow_search_engines = true
+  loadFavicon          = true
+  faviconVersion       = ""

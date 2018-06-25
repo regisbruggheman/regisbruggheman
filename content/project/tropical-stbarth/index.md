@@ -5,4 +5,3 @@ domain: "Presse"
 tags: ["identité visuelle", "charte graphique", "édition", "magazine"]
 draft: false
 ---
-Put your content here

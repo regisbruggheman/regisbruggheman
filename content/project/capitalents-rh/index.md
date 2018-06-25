@@ -6,5 +6,3 @@ tags: ["logo", "identité visuelle", "charte graphique", "papeterie", "site Inte
 website: "http://capitalents-rh.com"
 draft: false
 ---
-
-Le site a été conçue pour s'adapter gracieusement à toutes sortes d'écrans, grands et petits.

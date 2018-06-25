@@ -5,4 +5,3 @@ domain: "Architecte"
 tags: ["logo", "identité visuelle", "charte graphique", "papeterie"]
 draft: false
 ---
-Put your content here

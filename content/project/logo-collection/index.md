@@ -5,4 +5,3 @@ domain: "Divers"
 tags: ["logo"]
 draft: false
 ---
-Put your content here

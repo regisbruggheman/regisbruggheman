@@ -1,13 +1,14 @@
 <!doctype html>
-<html lang="{{ .Site.LanguageCode | default "fr" }}">
+<html lang="{{ .Site.LanguageCode | default "fr-FR" }}">
     <head>
 
         {{ block "site/meta" . }}{{ partial "site/meta.html" . }}{{ end }}
+        {{ partial "site/seo-schema" . }}
 
         <title>{{ block "title" . }}
             {{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}
         {{ end }}</title>
-
+        {{ partial "site/favicon" . }}
         {{ range .AlternativeOutputFormats }}
             <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
         {{ end }}
