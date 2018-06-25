@@ -81,12 +81,20 @@ body {
   font-weight: 700;
   text-transform:uppercase;
   letter-spacing: 1px;
+  font-size: .9rem;
   img {
-    max-width: 80px;
-    margin-right: 14px;
+    max-width: 60px;
+
   }
 }
-
+@include media-breakpoint-up(md) {
+  .navbar-brand {
+    font-size: 1rem;
+    img {
+      max-width: 80px;
+    }
+  }
+}
 /*----- HOME -----*/
 
 .hero {
