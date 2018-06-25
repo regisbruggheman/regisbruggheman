@@ -1,11 +1,6 @@
 {{ define "main" }}
 <div class="container">
   <div class="row">
-    <div class="col col-12 hero">
-      <h1>
-        Hi, I am a french graphic designer and art director based in Paris.
-      </h1>
-    </div>
     {{ range where .Data.Pages "Section" "project" }}
       {{ .Render "summary" }}
     {{ end }}
